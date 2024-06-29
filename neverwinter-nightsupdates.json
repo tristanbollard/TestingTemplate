@@ -1,0 +1,13 @@
+[
+    {
+        "UpdateStageName": "Install Neverwinter from SteamCMD",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "704450",
+        "UpdateSourceArgs": "704450",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]
