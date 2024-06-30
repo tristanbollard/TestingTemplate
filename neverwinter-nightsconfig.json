@@ -54,7 +54,7 @@
     {
         "DisplayName": "Minimum Level",
         "Category": "Server Settings",
-        "Description": "Minimum level required to connect to the server.",
+        "Description": "Minimum level required to connect to the server. Must be between 1 and 40.",
         "Keywords": "minimum,level",
         "FieldName": "minlevel",
         "InputType": "number",
@@ -63,6 +63,8 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
+        "MinValue": "1",
+        "MaxValue": "40",
         "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": true,
@@ -71,10 +73,12 @@
     {
         "DisplayName": "Maximum Level",
         "Category": "Server Settings",
-        "Description": "Maximum level allowed to connect to the server.",
+        "Description": "Maximum level allowed to connect to the server. Must be between 1 and 40.",
         "Keywords": "maximum,level",
         "FieldName": "maxlevel",
         "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "40",
         "IsFlagArgument": false,
         "ParamFieldName": "maxlevel",
         "IncludeInCommandLine": true,
@@ -188,7 +192,7 @@
         "SkipIfEmpty": true,
         "EnumValues": {
             "0": "Dungeon Master Controlled",
-            "1": "Player Controlled"
+            "1": "Player Pause Enabled"
         }
     },
     {
@@ -208,7 +212,7 @@
         "SkipIfEmpty": true,
         "EnumValues": {
             "0": "Normal Party Rules",
-            "1": "Singular Party Only"
+            "1": "Only One Party"
         }
     },
     {
@@ -227,8 +231,8 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "Stores Character Data on Client",
-            "1": "Stores Character Data on Server"
+            "0": "Allow Local Characters",
+            "1": "Only Server Characters"
         }
     },
     {
@@ -267,7 +271,7 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "Don't Enforce Legal Characters",
+            "0": "Allow All Characters",
             "1": "Enforce Legal Characters"
         }
     },
@@ -287,7 +291,7 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "Don't reload when empty",
+            "0": "Keep looted areas looted",
             "1": "Reload when empty"
         }
     },
@@ -407,7 +411,7 @@
     {
         "DisplayName": "userdirectory",
         "Category": "Server Settings",
-        "Description": "Where the server files are located.",
+        "Description": "Where the server files are/will be located.",
         "Keywords": "userdirectory",
         "FieldName": "userdirectory",
         "InputType": "text",
