@@ -1,14 +1,9 @@
 [
     {
-        "UpdateStageName": "Use SteamCMD to download NeverwinterNightsEE",
+        "UpdateStageName": "SteamCMD NeverwinterNightsEE",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "704450",
-        "UpdateSourceArgs": "704450",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "ForceDownloadPlatform": "Linux",
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateSourceTarget": "serverfiles"
     }
 ]
