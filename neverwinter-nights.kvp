@@ -1,7 +1,7 @@
 Meta.DisplayName=Neverwinter Nights
 Meta.Description=Neverwinter Nights Dedicated Server
 Meta.Arch=x86_64
-Meta.Author=AwesomeCreator - Made with AMP Config Generator
+Meta.Author= - Made with AMP Config Generator
 Meta.URL=https://store.steampowered.com/app/704450/Neverwinter_Nights_Enhanced_Edition/
 Meta.MinAMPVersion=2.4.6.6
 Meta.SpecificDockerImage=
@@ -9,7 +9,7 @@ Meta.DockerRequired=False
 Meta.ContainerPolicy=Supported
 Meta.ContainerPolicyReason=
 Meta.Prerequsites=[]
-Meta.AppConfigId=87b49e54-a248-41ab-8459-8e8082623eae
+Meta.AppConfigId=723f68e4-6835-4687-930c-c0f99e5feedc
 Meta.EndpointURIFormat=steam://connect/{ip}:{GenericModule.App.Ports.$SteamQueryPort}
 App.AdminMethod=STDIO
 App.HasReadableConsole=true
