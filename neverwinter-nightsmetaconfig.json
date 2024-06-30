@@ -1,11 +1,11 @@
 [
     {
-        "ConfigFile": "server/nwn.ini",
+        "ConfigFile": "serverfiles/server/nwn.ini",
         "ConfigType": "ini",
         "AutoMap": true
     },
     {
-        "ConfigFile": "server/settings.tml",
+        "ConfigFile": "serverfiles/server/settings.tml",
         "ConfigType": "",
         "AutoMap": false
     }

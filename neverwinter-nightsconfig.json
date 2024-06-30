@@ -2,7 +2,7 @@
     {
         "DisplayName": "Server Name",
         "Category": "Server Settings",
-        "Description": "Selection of the module that will be loaded",
+        "Description": "The name of the server as it will appear in the server browser.",
         "Keywords": "server,name",
         "FieldName": "servername  ",
         "InputType": "text",
@@ -19,7 +19,7 @@
     {
         "DisplayName": "Module",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "D&D module to load on server start.",
         "Keywords": "module",
         "FieldName": "module",
         "InputType": "text",
@@ -36,13 +36,14 @@
     {
         "DisplayName": "Max Players",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Number of players that can connect to the server.",
         "Keywords": "max,players",
         "FieldName": "$MaxUsers",
         "InputType": "number",
         "IsFlagArgument": false,
         "ParamFieldName": "maxclients",
         "IncludeInCommandLine": true,
+        "MinValue": "1",
         "DefaultValue": "6",
         "Placeholder": "6",
         "Suffix": "Players",
@@ -53,7 +54,7 @@
     {
         "DisplayName": "Minimum Level",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Minimum level required to connect to the server.",
         "Keywords": "minimum,level",
         "FieldName": "minlevel",
         "InputType": "number",
@@ -70,7 +71,7 @@
     {
         "DisplayName": "Maximum Level",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Maximum level allowed to connect to the server.",
         "Keywords": "maximum,level",
         "FieldName": "maxlevel",
         "InputType": "number",
@@ -87,7 +88,7 @@
     {
         "DisplayName": "Port",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Server Port. Default is 5121.",
         "Keywords": "port",
         "FieldName": "port",
         "InputType": "number",
@@ -104,7 +105,7 @@
     {
         "DisplayName": "Autosave Interval",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Autosave interval in minutes. 0 to disable.",
         "Keywords": "autosave,interval",
         "FieldName": "autosaveinterval",
         "InputType": "number",
@@ -121,7 +122,7 @@
     {
         "DisplayName": "Game Password",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Password required to connect to the server. Leave blank for no password.",
         "Keywords": "game,password",
         "FieldName": "playerpassword",
         "InputType": "text",
@@ -138,7 +139,7 @@
     {
         "DisplayName": "Dungeon Master Password",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Dungeon Master password required to connect to the server. Leave blank for no Dungeon Master.",
         "Keywords": "dungeon,master,password",
         "FieldName": "dmpassword",
         "InputType": "text",
@@ -155,7 +156,7 @@
     {
         "DisplayName": "Admin Password",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Admin password required to connect to the server. Leave blank for no Admin.",
         "Keywords": "admin,password",
         "FieldName": "adminpassword",
         "InputType": "text",
@@ -172,10 +173,10 @@
     {
         "DisplayName": "Pause and Play",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Pause and Play mode. Dungeon Master controlled or Player controlled.",
         "Keywords": "pause,and,play",
         "FieldName": "pauseandplay",
-        "InputType": "checkbox",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "pauseandplay",
         "IncludeInCommandLine": true,
@@ -185,17 +186,17 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "0": "Dungeon Master Controlled",
+            "1": "Player Controlled"
         }
     },
     {
         "DisplayName": "One Party",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Party type. Normal Party Rules or Singular Party Only.",
         "Keywords": "one,party",
         "FieldName": "oneparty",
-        "InputType": "checkbox",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "oneparty",
         "IncludeInCommandLine": true,
@@ -205,17 +206,17 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "0": "Normal Party Rules",
+            "1": "Singular Party Only"
         }
     },
     {
         "DisplayName": "Server Vault",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Character data storage. Client or Server.",
         "Keywords": "server,vault",
         "FieldName": "servervault",
-        "InputType": "checkbox",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "servervault",
         "IncludeInCommandLine": true,
@@ -225,17 +226,17 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "0": "Stores Character Data on Client",
+            "1": "Stores Character Data on Server"
         }
     },
     {
         "DisplayName": "Public Server",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Publically visible server or LAN/Direct Connection only.",
         "Keywords": "public,server",
         "FieldName": "publicserver",
-        "InputType": "checkbox",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "publicserver",
         "IncludeInCommandLine": true,
@@ -245,17 +246,17 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "0": "LAN/Direct Connection Only",
+            "1": "Visible on Public Browser"
         }
     },
     {
         "DisplayName": "Enforce Legal Characters",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Stops players joining with illegal feat, class, etc. combinations.",
         "Keywords": "enforce,legal,characters",
         "FieldName": "elc",
-        "InputType": "checkbox",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "elc",
         "IncludeInCommandLine": true,
@@ -265,17 +266,17 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "0": "Don't Enforce Legal Characters",
+            "1": "Enforce Legal Characters"
         }
     },
     {
         "DisplayName": "Reload When Empty",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "reloads the module when the last player leaves. So loot respawns, etc.",
         "Keywords": "reload,when,empty",
         "FieldName": "reloadwhenempty",
-        "InputType": "checkbox",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "reloadwhenempty",
         "IncludeInCommandLine": true,
@@ -285,17 +286,17 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "0": "Don't reload when empty",
+            "1": "Reload when empty"
         }
     },
     {
         "DisplayName": "Item Level Restrictions",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "applies a cost cap to items based on the level of the item.",
         "Keywords": "item,level,restrictions",
         "FieldName": "ilr",
-        "InputType": "checkbox",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "ilr",
         "IncludeInCommandLine": true,
@@ -305,14 +306,14 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "0": "Do Not Enforce ILR",
+            "1": "Enforce ILR"
         }
     },
     {
         "DisplayName": "Player Versus Player Level",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Area PVP settings. None, Party, Full.",
         "Keywords": "player,versus,player,level",
         "FieldName": "pvp",
         "InputType": "enum",
@@ -333,7 +334,7 @@
     {
         "DisplayName": "Game Type",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Applicable to Public Servers only. Optional.",
         "Keywords": "game,type",
         "FieldName": "gametype",
         "InputType": "enum",
@@ -365,7 +366,7 @@
     {
         "DisplayName": "Difficulty",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Sets the difficulty of the server.",
         "Keywords": "difficulty",
         "FieldName": "difficulty",
         "InputType": "enum",
@@ -388,7 +389,7 @@
     {
         "DisplayName": "Load Slot",
         "Category": "Server Settings",
-        "Description": "",
+        "Description": "Determines which save slot to load on server start. Leave Empty to disable.",
         "Keywords": "load,slot",
         "FieldName": "load",
         "InputType": "number",
@@ -400,6 +401,23 @@
         "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": true,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "userdirectory",
+        "Category": "Server Settings",
+        "Description": "Where the server files are located.",
+        "Keywords": "userdirectory",
+        "FieldName": "userdirectory",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "userdirectory",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "./server",
+        "Placeholder": "./server",
+        "Suffix": "",
+        "Hidden": true,
+        "SkipIfEmpty": false,
         "EnumValues": {}
     }
 ]
