@@ -1,13 +1,12 @@
 [
     {
-        "UpdateStageName": "Install Neverwinter from SteamCMD",
+        "UpdateStageName": "Download NWN:EE Server Executable",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "704450",
-        "UpdateSourceArgs": "704450",
-        "UnzipUpdateSource": false,
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://nwn.beamdog.net/downloads/nwnee-dedicated-8193.36-11.zip",
+        "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
-        "OneShot": false
+        "OneShot": true
     }
 ]

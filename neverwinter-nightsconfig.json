@@ -1,1 +1,53 @@
-[]
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "Server Settings",
+        "Description": "Selection of the module that will be loaded",
+        "Keywords": "server,name",
+        "FieldName": "servername  ",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "servername  ",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "Placeholder": "",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Module",
+        "Category": "Server Settings",
+        "Description": "The Story or Campaign to be played",
+        "Keywords": "module",
+        "FieldName": "module",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "module",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "Chapter1",
+        "Placeholder": "Chapter1",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "userdirectory",
+        "Category": "Server Settings",
+        "Description": "userdirectory",
+        "Keywords": "userdirectory",
+        "FieldName": "userdirectory",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "userdirectory",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "./server",
+        "Placeholder": "./server",
+        "Suffix": "",
+        "Hidden": true,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    }
+]
